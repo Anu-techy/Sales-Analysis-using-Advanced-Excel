@@ -161,7 +161,7 @@ Use Report to
 
 1. Understand customers and market performance over the time
    
-2. Slice and dice data to drill down the data
+2. Slice and dice data to drill down the hidden insights
 
 3. Determine discounts, helps to negotiate with consumers, and identify potential business expansion opportunities in promising countries.
 
