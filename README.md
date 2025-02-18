@@ -6,7 +6,7 @@ Analysing Sales of a Hardware company based on
 **Aim**
 To Analyze sales of the company to unveal hidden insights and give actionable recommendations
 
-======================================================================================================
+=========================================================================================
 
 **Objective**
 To Create a Customer Performance Report
@@ -102,7 +102,7 @@ In the Power Pivot:
 
 Added conditional formatting and improved aesthetics
 
-==============================================================================================
+==========================================================================================
 
 **Objective**
 To Create a Market Performance Report
