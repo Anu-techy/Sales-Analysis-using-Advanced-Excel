@@ -48,6 +48,8 @@ dim_date(date)                      --->     fact_sales_monthy(date)      one to
 
 **DAX Measures created for Customer Performance Report**
 
+In the Power Pivot, Created the following DAX measures in the fact_sales_monthly table
+
 Measure 1:  Net Sales = SUM(fact_sales_monthly[net_sales_amount])
 
 To create net sales measure for 2019,2020 and 2021, got FY column of dim_date to fact_sales_monthly table
@@ -58,4 +60,18 @@ Measure 3:  Net Sales 20 = CALCULATE ( [Net Sales], dim_date[FY]="2020")
 Measure 4:  Net Sales 21 = CALCULATE ( [Net Sales], dim_date[FY]="2021")
 Measure 5:  21 vs 20 = DIVIDE([Net Sales 21],[Net Sales 20],0)
 
+**Final Customer Performance Report Designing**
 
+In the Power Pivot: 
+
+Row   :   Customer (dim_customer)
+Values:   Net Sales 19
+          Net Sales 20
+          Net Sales 21
+Filters:  Region  (dim_market)
+          Market  (dim_market)
+          Division (dim_product)
+
+Added conditional formatting and improved aesthetics
+
+         
