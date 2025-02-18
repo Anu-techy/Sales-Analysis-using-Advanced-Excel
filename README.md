@@ -38,7 +38,7 @@ Extracted Data through various sources
 7. Load the data to data model
 8. Created dim_date table with date, month, FY (fiscal_year) columns.
 
-The Dim_Date table helps in analysis by providing a structured way to categorize and group data based on 
+The **Dim_Date** table helps in analysis by providing a structured way to categorize and group data based on 
 time (e.g., by day, month, quarter, or year), enabling easier and more flexible time-based analysis, 
 such as trend analysis, period-over-period comparisons, and time-based calculations (like YTD or MTD).
 Fiscal year of Atliq hardware is from september through August.
