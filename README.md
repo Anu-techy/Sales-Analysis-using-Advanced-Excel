@@ -2,6 +2,7 @@
 Analysing Sales of a Hardware company based on
 1. Customer Performance Report
 2. Market Performance Report
+3. KPI (Key Performance Indicators)
 
 **Aim**
 To Analyze sales of the company to unveal hidden insights and give actionable recommendations
