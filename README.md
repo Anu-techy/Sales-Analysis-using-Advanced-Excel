@@ -22,7 +22,9 @@ It has customers of two categories:
 
 Data is given in various excel sheets.
 Extracted Data through various sources
+
 **Dimension tables :** dim_customer, dim_product, dim_market
+
 **Fact table/Transaction table :** fact_sales_monthly
 
 **Data Transformations**
