@@ -2,6 +2,7 @@
 Analysing Sales of a Hardware company
 
 **Description:**
+
 Atliq is a hardware company which manufactures electronic hardware items like PC, Laptop, Hard Drive, mouse, Keyboards, pendrives etc
 It has operations all over the globe.
 
@@ -18,6 +19,7 @@ It has customers of two categories:
 To Analyze sales of the company to unveal hidden insights and give actionable recommendations
 
 **ETL (Extract Transform Load) Process**
+
 Data is given in various excel sheets.
 Extracted Data through various sources
 Dimension tables : dim_customer, dim_product, dim_market
@@ -55,32 +57,32 @@ dim_date(date)                      --->     fact_sales_monthy(date)      one to
 
 In the Power Pivot, Created the following DAX measures in the fact_sales_monthly table
 
-Measure 1:  Net Sales = SUM(fact_sales_monthly[net_sales_amount])
+**Measure 1:**  Net Sales = SUM(fact_sales_monthly[net_sales_amount])
 
 To create net sales measure for 2019,2020 and 2021, got FY column of dim_date to fact_sales_monthly table
 using the formula =RELATED(dim_date[FY])
 
-Measure 2:  Net Sales 19 = CALCULATE ( [Net Sales], dim_date[FY]="2019")
+**Measure 2:**  Net Sales 19 = CALCULATE ( [Net Sales], dim_date[FY]="2019")
 
-Measure 3:  Net Sales 20 = CALCULATE ( [Net Sales], dim_date[FY]="2020")
+**Measure 3:**  Net Sales 20 = CALCULATE ( [Net Sales], dim_date[FY]="2020")
 
-Measure 4:  Net Sales 21 = CALCULATE ( [Net Sales], dim_date[FY]="2021")
+**Measure 4:**  Net Sales 21 = CALCULATE ( [Net Sales], dim_date[FY]="2021")
 
-Measure 5:  21 vs 20 = DIVIDE([Net Sales 21],[Net Sales 20],0)
+**Measure 5**:  21 vs 20 = DIVIDE([Net Sales 21],[Net Sales 20],0)
 
 **Final Customer Performance Report Designing**
 
 In the Power Pivot: 
 
-Row   :   Customer (dim_customer)
+**Row   :**   Customer (dim_customer)
 
-Values:   Net Sales 19
+**Values:**   Net Sales 19
 
           Net Sales 20
           
           Net Sales 21
           
-Filters:  Region  (dim_market)
+**Filters:**  Region  (dim_market)
 
           Market  (dim_market)
           
