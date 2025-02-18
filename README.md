@@ -39,11 +39,16 @@ such as trend analysis, period-over-period comparisons, and time-based calculati
 Fiscal year of Atliq hardware is from september through August.
 
 **Data Modelling**
+
 dim_custommer(customer_code)        --->     fact_sales_monthly(customer_code)   one to many
+
 dim_product(product_code)           --->     fact_sales_monthly(product_code)    one to many
+
 We cannot connect dim_market directly to fact_sales_monthly as there is no common column between dim_market and fact_sales_monthly table.
 Hence we connect dim_market to dim_customer
+
 dim_market(market)                  --->     dim_customer(market)         one to many
+
 dim_date(date)                      --->     fact_sales_monthy(date)      one to many
 
 **DAX Measures created for Customer Performance Report**
