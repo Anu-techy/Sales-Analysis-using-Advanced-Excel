@@ -146,10 +146,19 @@ In the Power Pivot:
                         Net Sales 21
 
                         2021 target
+
           
 **Filters:**            Region  (dim_market)
           
                         Division (dim_product)
 
 Added conditional formatting and improved aesthetics
+
+
+**Recommendations** 
+
+Use Report to 
+1.Understand customers and market performance over the time 
+2. Slice and dice data to drill down the data
+3. Determine discounts, helps to negotiate with consumers, and identify potential business expansion opportunities in promising countries.
 
