@@ -1,8 +1,15 @@
 # Sales-Analysis-using-Advanced-Excel
-Analysing Sales of a Hardware company
+Analysing Sales of a Hardware company based on
+1. Customer Performance Report
+2. Market Performance Report
 
 **Aim**
 To Analyze sales of the company to unveal hidden insights and give actionable recommendations
+
+======================================================================================================
+
+**Objective**
+To Create a Customer Performance Report
 
 **Description:**
 
@@ -27,7 +34,7 @@ Extracted Data through various sources
 
 **Fact table/Transaction table :** fact_sales_monthly
 
-**Data Transformations**
+**Data Transformations in Power Query**
 
 1. Removed duplicate values
 2. Removed data with missing values (only 3 rows)
@@ -84,6 +91,8 @@ In the Power Pivot:
                         Net Sales 20
           
                         Net Sales 21
+
+                        21 vs 20
           
 **Filters:**            Region  (dim_market)
 
@@ -93,4 +102,54 @@ In the Power Pivot:
 
 Added conditional formatting and improved aesthetics
 
-         
+==============================================================================================
+
+**Objective**
+To Create a Market Performance Report
+
+**Note:**
+Here market is the country name where the sales are analyzed.
+
+**ETL (Extract Transform Load) Process**
+
+Separate ns_target_2021 table in .csv file is provided by the business owner.
+Extracted the same and loaded to the Data model after transformation in power query.
+
+**Data Modelling**
+
+
+dim_market(market)                  --->     ns_targets_2021(market)         one to many
+
+dim_date(date)                      --->     ns_targets_2021(date)           one to many
+
+**DAX Measures created for Market Performance Report**
+
+In the Power Pivot, Created the following DAX measures in the fact_sales_monthly table
+
+**Measure 1:**            Target 21 = SUM(ns_targets_2021[ns_target])
+
+**Measure 2:**            2021 target = [Net Sales 21] - [Target 21]
+
+**Measure 3:**            % Change = DIVIDE([2021 target],[Net Sales 21],0)
+
+
+**Final Market Performance Report Designing**
+
+In the Power Pivot: 
+
+**Row   :**             market (dim_market)
+
+**Values:**             Net Sales 19
+
+                        Net Sales 20
+          
+                        Net Sales 21
+
+                        2021 target
+          
+**Filters:**            Region  (dim_market)
+          
+                        Division (dim_product)
+
+Added conditional formatting and improved aesthetics
+
