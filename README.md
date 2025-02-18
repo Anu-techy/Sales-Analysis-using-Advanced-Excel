@@ -56,8 +56,11 @@ To create net sales measure for 2019,2020 and 2021, got FY column of dim_date to
 using the formula =RELATED(dim_date[FY])
 
 Measure 2:  Net Sales 19 = CALCULATE ( [Net Sales], dim_date[FY]="2019")
+
 Measure 3:  Net Sales 20 = CALCULATE ( [Net Sales], dim_date[FY]="2020")
+
 Measure 4:  Net Sales 21 = CALCULATE ( [Net Sales], dim_date[FY]="2021")
+
 Measure 5:  21 vs 20 = DIVIDE([Net Sales 21],[Net Sales 20],0)
 
 **Final Customer Performance Report Designing**
@@ -65,11 +68,17 @@ Measure 5:  21 vs 20 = DIVIDE([Net Sales 21],[Net Sales 20],0)
 In the Power Pivot: 
 
 Row   :   Customer (dim_customer)
+
 Values:   Net Sales 19
+
           Net Sales 20
+          
           Net Sales 21
+          
 Filters:  Region  (dim_market)
+
           Market  (dim_market)
+          
           Division (dim_product)
 
 Added conditional formatting and improved aesthetics
