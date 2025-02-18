@@ -20,3 +20,15 @@ To Analyze sales of the company to unveal hidden insights and give actionable re
 **ETL (Extract Transform Load) Process**
 Data is given in various excel sheets.
 Extracted Data through various sources
+
+**Data Transformations**
+1. Removed duplicate values
+2. Removed data with missing values (only 3 rows)
+3. Identified, replaced spelling mistakes in customer names
+4. Replaced nan category in market table to NA (North American Region) ater confirming with business owners
+5. Few rows have negative quantity , Replaced with positive after clear confirmation
+6. Named all the data transformation steps
+7. Load the data to datamodel
+
+
+
