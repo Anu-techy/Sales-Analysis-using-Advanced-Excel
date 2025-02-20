@@ -7,7 +7,7 @@ Analysing Sales of a Hardware company based on
 **Aim**
 To Analyze sales of the company to unveal hidden insights and give actionable recommendations
 
-=========================================================================================
+===================================================================
 
 **Objective**
 To Create a Customer Performance Report
@@ -22,7 +22,7 @@ It sells to consumers throught the following **distribution channels:**
 2. Retailer (Croma, amazon)
 3. Distributer( eg Neptune in China)
 
-It has **customers** of two categories:
+It has two **platforms**
 1. Brick and Mortar (like Croma, BestBuy)
 2. E-commerce ( like Amazon, Flipkart)
 
@@ -103,7 +103,7 @@ In the Power Pivot:
 
 Added conditional formatting and improved aesthetics
 
-==========================================================================================
+===============================================================
 
 **Objective**
 To Create a Market Performance Report
